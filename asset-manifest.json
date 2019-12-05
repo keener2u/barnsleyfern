@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/barnsleyfern/static/css/main.d1b05096.chunk.css",
+    "main.js": "/barnsleyfern/static/js/main.66b2b619.chunk.js",
+    "main.js.map": "/barnsleyfern/static/js/main.66b2b619.chunk.js.map",
+    "runtime-main.js": "/barnsleyfern/static/js/runtime-main.32ff8527.js",
+    "runtime-main.js.map": "/barnsleyfern/static/js/runtime-main.32ff8527.js.map",
+    "static/js/2.a6e306a0.chunk.js": "/barnsleyfern/static/js/2.a6e306a0.chunk.js",
+    "static/js/2.a6e306a0.chunk.js.map": "/barnsleyfern/static/js/2.a6e306a0.chunk.js.map",
+    "index.html": "/barnsleyfern/index.html",
+    "precache-manifest.23b1bc152bbb7a5df0e4c0be26885cfe.js": "/barnsleyfern/precache-manifest.23b1bc152bbb7a5df0e4c0be26885cfe.js",
+    "service-worker.js": "/barnsleyfern/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/barnsleyfern/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.a6e306a0.chunk.js.LICENSE": "/barnsleyfern/static/js/2.a6e306a0.chunk.js.LICENSE",
+    "static/media/logo.svg": "/barnsleyfern/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32ff8527.js",
+    "static/js/2.a6e306a0.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.66b2b619.chunk.js"
+  ]
+}
