@@ -1,19 +1,26 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+
 class BarnsleyFern extends React.Component {
+    constructor(props){
+        super(props);
+    }
     componentDidMount() {
       const canvas = this.refs.canvas
       const ctx = canvas.getContext("2d")
       const img = this.refs.image
+      const lim = 10000;
       img.onload = () => {
-        var lim = 1000000;
         var w = canvas.width;
         var h = canvas.height;
         var x=0.,y=0.,xw=0.,yw=0.,r;
         // Like in PARI/GP: return random number 0..max-1
         function randgp(max) {return Math.floor(Math.random()*max)}
         // Clean canvas
-        ctx.fillStyle="white"; ctx.fillRect(0,0,w,h);
+        ctx.fillStyle="black"; ctx.fillRect(0,0,w,h);
         // MAIN LOOP
+        ctx.font = "44px Courier"
+       
         for(var i=0; i<lim; i++) {
           r=randgp(100);
           if (r<=1) {xw=0;yw=0.16*y;}
@@ -22,11 +29,12 @@ class BarnsleyFern extends React.Component {
           else {xw=0.85*x+0.04*y;yw=-0.04*x+0.85*y+1.6;}
           x=xw;y=yw; ctx.fillStyle="green"; ctx.fillRect(x*50+260,-y*50+540,1,1);
         }//fend i
+        ctx.fillText("Fractal Fx", 10, 100)
       }
     }
     render() {
       return(
-        <div>
+        <div className="barnsleyfern">
           <canvas ref="canvas" width={640} height={425} />
           <img ref="image" src="favicon.ico" alt="" style={{display: 'none'}} className="hidden" />
         </div>
