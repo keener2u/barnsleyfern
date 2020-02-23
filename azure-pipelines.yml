@@ -28,7 +28,7 @@ steps:
     rootFolderOrFile: './build'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: 'ReactApp.zip'
+    archiveFile: '/home/vsts/work/1/s/ReactApp.zip'
     replaceExistingArchive: true
 
 
