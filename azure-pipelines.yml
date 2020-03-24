@@ -27,10 +27,11 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: |
-     **/*
-     !src/**
-     !node_modules/**
+      **/*
+      !src/**
+      !node_modules/**
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    CleanTargetFolder: true
 
 - task: PublishBuildArtifacts@1
   inputs:
