@@ -19,7 +19,6 @@ steps:
     versionSpec: '10.x'
 
 - script: |
-    yarn add serve
     npm install
     npm run build
   displayName: 'npm install and build'
@@ -29,8 +28,6 @@ steps:
     Contents: |
       *
       build/**
-      !src/**
-      !node_modules/**
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     CleanTargetFolder: true
 
