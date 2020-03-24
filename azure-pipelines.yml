@@ -27,7 +27,8 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: |
-      **/*
+      *
+      build/**
       !src/**
       !node_modules/**
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
