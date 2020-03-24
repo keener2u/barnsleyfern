@@ -27,9 +27,9 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: |
-      **/* ## update to match what you want to copy
-     !src/**
-     !node_modules/**
+    **/* ## update to match what you want to copy
+    !src/**
+    !node_modules/**
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
