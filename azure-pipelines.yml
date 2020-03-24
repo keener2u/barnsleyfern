@@ -27,13 +27,12 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: |
-    **/*
-    !src/**
-    !node_modules/**
+     **/*
+     !src/**
+     !node_modules/**
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
   inputs:
     ArtifactName: 'drop' 
     pathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
-
