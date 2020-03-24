@@ -19,9 +19,10 @@ steps:
     versionSpec: '10.x'
 
 - script: |
-    yarn install serve
+    yarn add serve
     npm install
     npm run build
+    npm prune
   displayName: 'npm install and build'
 
 - task: CopyFiles@2
