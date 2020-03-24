@@ -22,12 +22,14 @@ steps:
     yarn add serve
     npm install
     npm run build
-    npm prune
   displayName: 'npm install and build'
 
 - task: CopyFiles@2
   inputs:
-    Contents: '**' ## update to match what you want to copy
+    Contents: |
+      **/* ## update to match what you want to copy
+     !src/**
+     !node_modules/**
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
