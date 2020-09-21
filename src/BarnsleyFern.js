@@ -1,9 +1,6 @@
 import React from 'react';
 
 class BarnsleyFern extends React.Component {
-    constructor(props){
-        super(props);
-    }
     componentDidMount() {
       const canvas = this.refs.canvas
       const ctx = canvas.getContext("2d")
