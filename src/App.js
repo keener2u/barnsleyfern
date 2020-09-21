@@ -8,9 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-
+import ReactGA from 'react-ga';
 import BarnsleyFern from "./BarnsleyFern";
 library.add(fab, fas);
+ReactGA.initialize('UA-178650588-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (
