@@ -2,7 +2,7 @@ import React from 'react';
 
 class BarnsleyFern extends React.Component {
     componentDidMount() {
-      document.body.style.backgroundColor = "red"
+      document.body.style.backgroundColor = "black"
       const canvas = this.refs.canvas
       const ctx = canvas.getContext("2d")
       const img = this.refs.image
