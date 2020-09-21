@@ -55,7 +55,7 @@ function App() {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink disabled href="mailto">
+                  <NavLink disabled href="#">
                     <FontAwesomeIcon icon={["fab", "instagram-square"]} />
                   </NavLink>
                 </NavItem>
