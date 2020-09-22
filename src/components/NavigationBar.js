@@ -6,6 +6,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fab,fas)
 
+
 class NavigationBar extends React.Component {
   render() {
     return (
