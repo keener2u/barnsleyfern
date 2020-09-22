@@ -4,12 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fab,fas)
+
 
 class NavigationBar extends React.Component {
   render() {
     return (
       <Navbar type="dark" theme="secondary" expand="md">
-        <Nav navbar className="mr">
+        <Nav navbar className="mr-auto">
           <NavItem>
             <NavLink disabled href="#">
               Conservation through IOT
@@ -27,22 +29,7 @@ class NavigationBar extends React.Component {
           </NavItem>
         </Nav>
         <Nav navbar className="ml-auto">
-          <NavItem>
-            <NavLink disabled href="#">
-              <FontAwesomeIcon icon={["fab", "youtube-square"]} />
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink disabled href="#">
-              <FontAwesomeIcon icon={["fab", "twitter-square"]} />
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink disabled href="#">
-              <FontAwesomeIcon icon={["fab", "instagram-square"]} />
-            </NavLink>
-          </NavItem>
-          <NavItem>
+        <NavItem>
             <NavLink href="https://www.linkedin.com/in/matthew-keen-6ba886/">
               <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </NavLink>
@@ -58,6 +45,21 @@ class NavigationBar extends React.Component {
           >
             <FontAwesomeIcon icon={["fas", "envelope-square"]} />
           </NavLink>
+          <NavItem>
+            <NavLink disabled href="#">
+              <FontAwesomeIcon icon={["fab", "youtube-square"]} />
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink disabled href="#">
+              <FontAwesomeIcon icon={["fab", "twitter-square"]} />
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink disabled href="#">
+              <FontAwesomeIcon icon={["fab", "instagram-square"]} />
+            </NavLink>
+          </NavItem>
         </Nav>
       </Navbar>
     );
