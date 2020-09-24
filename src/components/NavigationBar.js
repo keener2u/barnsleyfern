@@ -46,7 +46,7 @@ class NavigationBar extends React.Component {
             <FontAwesomeIcon icon={["fas", "envelope-square"]} />
           </NavLink>
           <NavItem>
-            <NavLink disabled href="#">
+            <NavLink href="https://www.youtube.com/channel/UCTaqKaPLjTWbLr3Jo8otbbQ">
               <FontAwesomeIcon icon={["fab", "youtube-square"]} />
             </NavLink>
           </NavItem>
