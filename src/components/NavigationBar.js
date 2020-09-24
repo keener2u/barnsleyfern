@@ -40,7 +40,6 @@ class NavigationBar extends React.Component {
             </NavLink>
           </NavItem>
           <NavLink
-            active
             href="mailto:info@fractalfx.net?subject=FractalFX.net referral&body=Saw your website!"
           >
             <FontAwesomeIcon icon={["fas", "envelope-square"]} />
@@ -51,7 +50,7 @@ class NavigationBar extends React.Component {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink disabled href="https://twitter.com/TheFractalFX">
+            <NavLink href="https://twitter.com/TheFractalFX">
               <FontAwesomeIcon icon={["fab", "twitter-square"]} />
             </NavLink>
           </NavItem>
