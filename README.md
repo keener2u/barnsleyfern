@@ -1,7 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Barnsley Fern(WIP)
+Originally developed to play with procedural generation of fractals in React Canvas. This has now become my main landing point for my Azure hosted portfolio site. In the future I would like to break out the Barnsley generator away from the site. I also want to add a few real time controls to change the random see, point limit and coefficients in real time.
 
-## Available Scripts
 
+## To use locally
 In the project directory, you can run:
 
 ### `yarn start`
