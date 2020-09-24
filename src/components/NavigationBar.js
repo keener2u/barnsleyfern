@@ -51,7 +51,7 @@ class NavigationBar extends React.Component {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink disabled href="#">
+            <NavLink disabled href="https://twitter.com/TheFractalFX">
               <FontAwesomeIcon icon={["fab", "twitter-square"]} />
             </NavLink>
           </NavItem>
