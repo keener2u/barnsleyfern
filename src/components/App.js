@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
 import "./App.css";
@@ -7,11 +7,13 @@ import { Container, Row, Col } from "shards-react";
 
 import BarnsleyFern from "./BarnsleyFern";
 import NavigationBar from "./NavigationBar"
-
+import MainContent from "./MainContent"
 function App() {
+  const [collapsed, setCollapsed] = useState(false);
+
   return (
     <div className="App">
-      <Container className="dr-example-container">
+      <Container>
         <Row>
           <Col>
             <BarnsleyFern width="640" height="425" />
@@ -19,8 +21,13 @@ function App() {
         </Row>
         <Row>
           <Col>
-            <NavigationBar />
+            <NavigationBar onPastProjectClick={() => setCollapsed(!collapsed)}/>
           </Col>
+        </Row>
+        <Row>
+          <Col>
+         <MainContent collapsed={collapsed}></MainContent>
+         </Col>
         </Row>
       </Container>
     </div>

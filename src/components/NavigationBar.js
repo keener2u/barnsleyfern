@@ -10,7 +10,7 @@ library.add(fab,fas)
 class NavigationBar extends React.Component {
   render() {
     return (
-      <Navbar type="dark" theme="secondary" expand="md">
+      <Navbar sticky="top" type="dark" theme="secondary" expand="md">
         <Nav navbar className="mr-auto">
           <NavItem>
             <NavLink disabled href="#">
@@ -23,7 +23,7 @@ class NavigationBar extends React.Component {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink disabled href="#">
+            <NavLink onClick={this.props.onPastProjectClick} href="#">
               Past Projects
             </NavLink>
           </NavItem>
