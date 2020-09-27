@@ -1,14 +1,15 @@
 import React from "react";
+function BarnsleyFern(props) {
+  const canvasRef = React.useRef(null)
+  const imageRef = React.useRef(null)
 
-class BarnsleyFern extends React.Component {
-  componentDidMount() {
+  React.useEffect(() => {
     document.body.style.backgroundColor = "black";
     /** Snippet from https://rosettacode.org/wiki/Barnsley_fern#JavaScript **/
-    const canvas = this.refs.canvas;
+    const canvas = canvasRef.current
     const ctx = canvas.getContext("2d");
-    const img = this.refs.image;
-    const lim = 10000;
-    img.onload = () => {
+    const lim = props.limit;
+    
       var w = canvas.width;
       var h = canvas.height;
       var x = 0,
@@ -47,14 +48,14 @@ class BarnsleyFern extends React.Component {
         ctx.fillRect(x * 50 + 260, -y * 50 + 540, 1, 1);
       } //fend i
       ctx.fillText("Fractal Fx", 10, 100);
-    }; /** End snippet **/
-  }
-  render() {
+      /** End snippet **/
+    } 
+  )
     return (
       <div className="barnsleyfern">
-        <canvas ref="canvas" width={640} height={425} />
+        <canvas ref={canvasRef} limit={props.limit} width={640} height={425} />
         <img
-          ref="image"
+          ref={imageRef}
           src="favicon.ico"
           alt=""
           style={{ display: "none" }}
@@ -63,5 +64,5 @@ class BarnsleyFern extends React.Component {
       </div>
     );
   }
-}
+
 export default BarnsleyFern;
