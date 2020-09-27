@@ -1,5 +1,5 @@
 import React from "react";
-function BarnsleyFern(props) {
+function BarnsleyFern({limit}) {
   const canvasRef = React.useRef(null)
   const imageRef = React.useRef(null)
 
@@ -8,7 +8,7 @@ function BarnsleyFern(props) {
     /** Snippet from https://rosettacode.org/wiki/Barnsley_fern#JavaScript **/
     const canvas = canvasRef.current
     const ctx = canvas.getContext("2d");
-    const lim = props.limit;
+    const lim = limit;
     
       var w = canvas.width;
       var h = canvas.height;
@@ -53,7 +53,7 @@ function BarnsleyFern(props) {
   )
     return (
       <div className="barnsleyfern">
-        <canvas ref={canvasRef} limit={props.limit} width={640} height={425} />
+        <canvas ref={canvasRef} limit={limit} width={640} height={425} />
         <img
           ref={imageRef}
           src="favicon.ico"
