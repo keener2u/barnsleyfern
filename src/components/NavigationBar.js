@@ -8,6 +8,7 @@ library.add(fab,fas)
 
 const NavigationBar  = () => {
   const onClick = (href, event) => {
+    
     event.preventDefault();
     window.history.pushState({}, '', href);
     console.log(href)
@@ -15,25 +16,25 @@ const NavigationBar  = () => {
     window.dispatchEvent(navEvent);
   }
     return (
-      <Navbar sticky="top" type="dark" theme="secondary" expand="md">
-        <Nav navbar className="mr-auto">
+      <Navbar sticky="top" type="dark" theme="secondary" style={{line: 'green'}} expand="md">
+        <Nav tabs className="mr-auto" type="dark" theme="primary" >
           <NavItem>
-            <NavLink onClick={(e) => onClick("/IOT",e)} href="IOT">
+            <NavLink onClick={(e) => onClick("/IOT",e)} style={{color: 'black'}} href="IOT">
               Conservation through IOT
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onClick={(e) => onClick("/Comradery",e)} href="Comradery">
+            <NavLink onClick={(e) => onClick("/Comradery",e)} style={{color: 'black'}} href="Comradery">
               Remote Team Comradery
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onClick={(e) => onClick("/ThingAMonth",e)} href="ThingAMonth">
+            <NavLink onClick={(e) => onClick("/ThingAMonth",e)} style={{color: 'black'}} href="ThingAMonth">
               Thing A Month
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onClick={(e) => onClick("/PastProjects",e)} href="PastProjects">
+            <NavLink onClick={(e) => onClick("/PastProjects",e)} style={{color: 'black'}} href="PastProjects">
               Past Projects
             </NavLink>
           </NavItem>
