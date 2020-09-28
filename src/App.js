@@ -5,11 +5,15 @@ import "./App.css";
 import { Container, Row, Col, Slider } from "shards-react";
 
 
-import BarnsleyFern from "./BarnsleyFern";
-import NavigationBar from "./NavigationBar"
-import MainContent from "./MainContent"
+import BarnsleyFern from "./components/BarnsleyFern";
+import NavigationBar from "./components/NavigationBar"
+import PastProjects from "./components/PastProjects"
+import Route from "./components/Route"
+import IOT from "./components/IOT/IOT"
+import Comradery from "./components/Comradery/Comradery"
+import ThingAMonth from "./components/ThingAMonth/ThingAMonth"
 function App() {
-  const [collapsed, setCollapsed] = useState(false);
+
   const [limit, setLimit] = useState(10000)
 
   return (
@@ -27,12 +31,26 @@ function App() {
         </Row>
         <Row>
           <Col>
-            <NavigationBar onPastProjectClick={() => setCollapsed(!collapsed)}/>
+            <NavigationBar />
           </Col>
         </Row>
         <Row>
           <Col>
-         <MainContent collapsed={collapsed}></MainContent>
+          <Route path="/PastProjects">
+           <PastProjects />
+          </Route>
+          <Route path="/IOT">
+           <IOT />
+          </Route>
+          <Route path="/Comradery">
+           <Comradery />
+          </Route>
+          <Route path="/ThingAMonth">
+           <ThingAMonth />
+          </Route>
+          <Route path="/">
+            <div />
+          </Route>
          </Col>
         </Row>
       </Container>
