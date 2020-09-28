@@ -9,7 +9,7 @@ const Comradery = () => (
         <p>
           Many things that come natural in a colocated team become exponentially
           harder when working remote. The following are projects and ideas to
-          help build team comaradery and run an agile team more efficiently
+          help build team comaradery and run an agile team more efficiently.
         </p>
       </CardBody>
     </Card>
