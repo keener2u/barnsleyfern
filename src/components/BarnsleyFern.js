@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useRef} from "react";
 function BarnsleyFern({limit}) {
-  const canvasRef = React.useRef(null)
-  const imageRef = React.useRef(null)
+  const canvasRef = useRef(null)
+
 
   React.useEffect(() => {
     document.body.style.backgroundColor = "black";
@@ -54,13 +54,7 @@ function BarnsleyFern({limit}) {
     return (
       <div className="barnsleyfern">
         <canvas ref={canvasRef} limit={limit} width={640} height={425} />
-        <img
-          ref={imageRef}
-          src="favicon.ico"
-          alt=""
-          style={{ display: "none" }}
-          className="hidden"
-        />
+
       </div>
     );
   }
