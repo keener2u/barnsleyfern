@@ -16,8 +16,8 @@ const NavigationBar  = () => {
     window.dispatchEvent(navEvent);
   }
     return (
-      <Navbar sticky="top" type="dark" theme="secondary" style={{line: 'green'}} expand="md">
-        <Nav tabs className="mr-auto" type="dark" theme="primary" >
+      <Navbar sticky="top" type="dark" theme="secondary" expand="md">
+        <Nav tabs className="mr-auto">
           <NavItem>
             <NavLink onClick={(e) => onClick("/IOT",e)} style={{color: 'black'}} href="IOT">
               Conservation through IOT
