@@ -19,7 +19,6 @@ const Comradery = () => (
           harder when working remote. The following are projects and ideas to
           help build team comaradery and run an agile team more efficiently
         </p>
-        <Button disabled>Read more &rarr;</Button>
       </CardBody>
     </Card>
     <Container>
@@ -37,7 +36,6 @@ const Comradery = () => (
                 current speaker will have a small amount of time to finish up
                 their point before moving the conch to the next person.
               </p>
-              <Button disabled>More to come &rarr;</Button>
             </CardBody>
           </Card>
         </Col>

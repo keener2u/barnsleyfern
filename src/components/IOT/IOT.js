@@ -13,7 +13,6 @@ const IOT = () => (
           their monthly costs, while helping conserve energy to save the
           environment.
         </p>
-        <Button disabled>Read more &rarr;</Button>
       </CardBody>
     </Card>
   </div>
