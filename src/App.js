@@ -12,9 +12,11 @@ import Route from "./components/Route"
 import IOT from "./components/IOT/IOT"
 import Comradery from "./components/Comradery/Comradery"
 import ThingAMonth from "./components/ThingAMonth/ThingAMonth"
+
 function App() {
 
   const [limit, setLimit] = useState(10000)
+  const [path, setPath] = useState("/")
 
   return (
     <div className="App">
@@ -24,7 +26,7 @@ function App() {
             <BarnsleyFern width="640" height="425" limit={limit} />
             <Slider 
               onSet={(e) => setLimit(parseFloat(e[0]))} range={{min:200, max:40000}}
-              start={limit}
+              start={[limit]}
               connect={[true, false]}
             />
           </Col>
