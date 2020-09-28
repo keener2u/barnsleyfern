@@ -15,7 +15,7 @@ import {
 
 const ThingAMonth = () => (
   <div data-testid="ThingAMonth" type="dark" theme="primary" expand="ld">
-        <Card>
+        <Card theme="light">
           <CardBody>
             <CardTitle>Thing A Month</CardTitle>
             <p>
@@ -29,9 +29,8 @@ const ThingAMonth = () => (
       <Row>
         <Col sm="12" md="4" lg="3">
         <br></br>
-          <Card style={{ maxWidth: "300px" }}>
-            <CardHeader>Card header</CardHeader>
-            <CardImg src="https://place-hold.it/300x200" />
+          <Card>
+            <CardHeader>September</CardHeader>
             <CardBody>
               <CardTitle>Lorem Ipsum</CardTitle>
               <p>Lorem ipsum dolor sit amet.</p>
@@ -42,23 +41,8 @@ const ThingAMonth = () => (
         </Col>
         <Col sm="12" md="4" lg="3">
         <br></br>
-          <Card style={{ maxWidth: "300px" }}>
-            <CardHeader>Card header</CardHeader>
-            <CardImg src="https://place-hold.it/300x200" />
-            <CardBody>
-              <CardTitle>Lorem Ipsum</CardTitle>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <Button>Read more &rarr;</Button>
-            </CardBody>
-            <CardFooter>Card footer</CardFooter>
-          </Card>
-        </Col>
-
-        <Col sm="12" md="4" lg="3">
-        <br></br>
-          <Card style={{ maxWidth: "300px" }}>
-            <CardHeader>Card header</CardHeader>
-            <CardImg src="https://place-hold.it/300x200" />
+          <Card>
+            <CardHeader>October</CardHeader>
             <CardBody>
               <CardTitle>Lorem Ipsum</CardTitle>
               <p>Lorem ipsum dolor sit amet.</p>
@@ -70,9 +54,21 @@ const ThingAMonth = () => (
 
         <Col sm="12" md="4" lg="3">
         <br></br>
-          <Card style={{ maxWidth: "300px" }}>
-            <CardHeader>Card header</CardHeader>
-            <CardImg src="https://place-hold.it/300x200" />
+          <Card>
+            <CardHeader>November</CardHeader>
+            <CardBody>
+              <CardTitle>Lorem Ipsum</CardTitle>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <Button>Read more &rarr;</Button>
+            </CardBody>
+            <CardFooter>Card footer</CardFooter>
+          </Card>
+        </Col>
+
+        <Col sm="12" md="4" lg="3">
+        <br></br>
+          <Card>
+            <CardHeader>December</CardHeader>
             <CardBody>
               <CardTitle>Lorem Ipsum</CardTitle>
               <p>Lorem ipsum dolor sit amet.</p>

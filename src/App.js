@@ -24,7 +24,7 @@ function App() {
             <BarnsleyFern width="640" height="425" limit={limit} />
             <Slider 
               onSet={(e) => setLimit(parseFloat(e[0]))} range={{min:200, max:40000}}
-              start={[limit]}
+              start={limit}
               connect={[true, false]}
             />
           </Col>

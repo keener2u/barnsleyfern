@@ -14,20 +14,10 @@ const Comradery = () => (
   <div data-testid="Comradery">
      <Card>
       <CardBody>
-        <CardTitle>Our Mission</CardTitle>
-        <p>Harnessing the butterfly effect, small things can have a large effect on the world. Through the use of non-permanent installation automation devices and AI, we believe we can help renters save power, lowering their monthly costs, while helping conserve energy to save the environment.</p>
+        <CardTitle>Value Proposition</CardTitle>
+        <p>Many things that come natural in a colocated team become exponentially harder when working remote. The following are projects and ideas to help build team comaradery and run an agile team more efficiently</p>
         <Button disabled>Read more &rarr;</Button>
       </CardBody>
-    </Card>
-        <Card style={{ maxWidth: "300px" }}>
-      <CardHeader>Card header</CardHeader>
-      <CardImg src="https://place-hold.it/300x200" />
-      <CardBody>
-        <CardTitle>Lorem Ipsum</CardTitle>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <Button>Read more &rarr;</Button>
-      </CardBody>
-      <CardFooter>Card footer</CardFooter>
     </Card>
   </div>
 );
