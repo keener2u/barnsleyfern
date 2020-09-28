@@ -13,17 +13,22 @@ class NavigationBar extends React.Component {
       <Navbar sticky="top" type="dark" theme="secondary" expand="md">
         <Nav navbar className="mr-auto">
           <NavItem>
-            <NavLink disabled href="#">
+            <NavLink href="IOT">
               Conservation through IOT
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink disabled href="#">
+            <NavLink href="Comradery">
               Remote Team Comradery
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onClick={this.props.onPastProjectClick} href="#">
+            <NavLink href="ThingAMonth">
+              Thing A Month
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="PastProjects">
               Past Projects
             </NavLink>
           </NavItem>
