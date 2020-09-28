@@ -16,7 +16,6 @@ import ThingAMonth from "./components/ThingAMonth/ThingAMonth"
 function App() {
 
   const [limit, setLimit] = useState(10000)
-  const [path, setPath] = useState("/")
 
   return (
     <div className="App">
