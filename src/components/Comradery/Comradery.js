@@ -40,7 +40,7 @@ const Comradery = () => (
             <CardBody>
               <CardTitle>Teams Plugin: Agile MMORPG Pong</CardTitle>
               <p>
-                This will be plugin used during daily standups. Scrums teams
+                This will be a plugin used during daily standups. Scrums teams
                 will be pitted against each other. Each standup the pong ball
                 will move one step. Each member will get a paddle and after
                 their yesterday, today and blockers update they will get the
