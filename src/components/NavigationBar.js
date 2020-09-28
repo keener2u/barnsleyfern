@@ -6,29 +6,35 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fab,fas)
 
-
-class NavigationBar extends React.Component {
-  render() {
+const NavigationBar  = () => {
+  const onClick = (href, event) => {
+    
+    event.preventDefault();
+    window.history.pushState({}, '', href);
+    console.log(href)
+    const navEvent = new PopStateEvent('popstate');
+    window.dispatchEvent(navEvent);
+  }
     return (
       <Navbar sticky="top" type="dark" theme="secondary" expand="md">
-        <Nav navbar className="mr-auto">
+        <Nav tabs className="mr-auto">
           <NavItem>
-            <NavLink href="IOT">
+            <NavLink onClick={(e) => onClick("/IOT",e)} style={{color: 'black'}} href="IOT">
               Conservation through IOT
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="Comradery">
+            <NavLink onClick={(e) => onClick("/Comradery",e)} style={{color: 'black'}} href="Comradery">
               Remote Team Comradery
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="ThingAMonth">
+            <NavLink onClick={(e) => onClick("/ThingAMonth",e)} style={{color: 'black'}} href="ThingAMonth">
               Thing A Month
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="PastProjects">
+            <NavLink onClick={(e) => onClick("/PastProjects",e)} style={{color: 'black'}} href="PastProjects">
               Past Projects
             </NavLink>
           </NavItem>
@@ -68,5 +74,4 @@ class NavigationBar extends React.Component {
       </Navbar>
     );
   }
-}
 export default NavigationBar;

@@ -20,7 +20,7 @@ const Comradery = () => (
           <Card>
             <CardBody>
               <CardTitle>Teams Plugin: Live Agenda and The Conch</CardTitle>
-              <p5>
+              <p>
                 We have a layer 8 collision issue when using online tools. Based
                 off Lord of the Flies, this is a Microsoft Teams plugin that
                 enables people to click a button and enter a queue, when they
@@ -30,7 +30,7 @@ const Comradery = () => (
                 should enable fairness with online meetings and make sure the
                 person comfortable with breaking into a conversation doesn't
                 lead the chat.
-              </p5>
+              </p>
             </CardBody>
           </Card>
         </Col>
