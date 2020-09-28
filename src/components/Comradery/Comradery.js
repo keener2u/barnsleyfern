@@ -1,15 +1,8 @@
 import React from "react";
-import {
-  Card,
-  CardTitle,
-  CardBody,
-  Row,
-  Col,
-  Container,
-} from "shards-react";
+import { Card, CardTitle, CardBody, Row, Col, Container } from "shards-react";
 
 const Comradery = () => (
-  <div data-testid="Comradery">
+  <div data-testid="Comradery" style={{color: 'black'}}>
     <Card theme="light">
       <CardBody>
         <CardTitle>Value Proposition</CardTitle>
@@ -27,14 +20,17 @@ const Comradery = () => (
           <Card>
             <CardBody>
               <CardTitle>Teams Plugin: Live Agenda and The Conch</CardTitle>
-              <p>
-                We have a layer 8 collision issue when communicating or
-                videoteleconferencing. Based off Lord of the Flies, this is a
-                team's plugin that enables people to click a button and enter a
-                queue when they want to make a comment. At this point the
+              <p5>
+                We have a layer 8 collision issue when using online tools. Based
+                off Lord of the Flies, this is a Microsoft Teams plugin that
+                enables people to click a button and enter a queue, when they
+                want to make a comment in the conversation. Once queued the
                 current speaker will have a small amount of time to finish up
-                their point before moving the conch to the next person.
-              </p>
+                their point before the conch moves to the next person. This
+                should enable fairness with online meetings and make sure the
+                person comfortable with breaking into a conversation doesn't
+                lead the chat.
+              </p5>
             </CardBody>
           </Card>
         </Col>

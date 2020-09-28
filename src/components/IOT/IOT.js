@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardTitle, CardBody} from "shards-react";
 
 const IOT = () => (
-  <div data-testid="IOT">
+  <div data-testid="IOT" style={{color: 'black'}}>
     <Card theme="light">
       <CardBody>
         <CardTitle>Value Proposition</CardTitle>

@@ -61,7 +61,7 @@ const ThingAMonth = () => (
             <CardHeader>November</CardHeader>
             <CardBody>
               <CardTitle>Coming Soon</CardTitle>
-              <p>To Be Annoucned</p>
+              <p>To Be Announced</p>
             </CardBody>
           </Card>
         </Col>
@@ -72,7 +72,7 @@ const ThingAMonth = () => (
             <CardHeader>December</CardHeader>
             <CardBody>
               <CardTitle>Coming Soon</CardTitle>
-              <p>To Be Annoucned</p>
+              <p>To Be Announced</p>
             </CardBody>
           </Card>
         </Col>
