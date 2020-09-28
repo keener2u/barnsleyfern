@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardTitle, CardBody, Button } from "shards-react";
+import { Card, CardTitle, CardBody} from "shards-react";
 
 const IOT = () => (
   <div data-testid="IOT">
