@@ -42,9 +42,9 @@ const Comradery = () => (
               <p>
                 This will be a plugin used during daily standups. Scrums teams
                 will be pitted against each other. During the daily standup, the pong ball
-                will move one step for the day. Each member will get a paddle and after
+                will move one step for the day. Each member will get their own paddle defending their goal. After
                 their yesterday, today and blockers update they will get the
-                chance to move their paddle for on iteration. Other power-ups may
+                chance to move their paddle one space for the iteration. Other power-ups may
                 be given based off JIRA checkins and Github commits.
               </p>
             </CardBody>
