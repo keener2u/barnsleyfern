@@ -35,7 +35,7 @@ const ThingAMonth = () => (
                 site hosted on Azure. Update the Barnsley component to take user
                 input with a slider. Built initial navigation.
               </p>
-              <Button disabled>More to come &rarr;</Button>
+              <Button href="https://github.com/keener2u/barnsleyfern">Done &rarr;</Button>
             </CardBody>
           </Card>
         </Col>
@@ -44,11 +44,11 @@ const ThingAMonth = () => (
           <Card>
             <CardHeader>October</CardHeader>
             <CardBody>
-              <CardTitle>CoinPCB Refactor</CardTitle>
+              <CardTitle>Teams: Agenda and Conch</CardTitle>
               <p>
-                Refactor the ESP8266 CoinPCB to work with Mozilla IOT and Azure
-                IOT. Refactor my roomba virtual wall code to work with Mozilla
-                IOT.{" "}
+                We have a layer 8 collision problem with video conferencing.
+                This will be plugin to help run a virtual meeting and minimize
+                people needing to be agressive to get their point across.
               </p>
               <Button disabled>More to come &rarr;</Button>
             </CardBody>
@@ -60,8 +60,13 @@ const ThingAMonth = () => (
           <Card>
             <CardHeader>November</CardHeader>
             <CardBody>
-              <CardTitle>Coming Soon</CardTitle>
-              <p>To Be Announced</p>
+              <CardTitle>CoinPCB Refator</CardTitle>
+              <p>
+                Refactor the ESP8266 CoinPCB to work with Mozilla IOT and Azure
+                IOT. Refactor my roomba virtual wall code to work with Mozilla
+                IOT.{" "}
+              </p>
+              <Button href="https://github.com/keener2u/CoinPCB">More to come &rarr;</Button>
             </CardBody>
           </Card>
         </Col>
