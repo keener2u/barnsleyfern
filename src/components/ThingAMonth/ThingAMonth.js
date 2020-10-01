@@ -60,7 +60,7 @@ const ThingAMonth = () => (
           <Card>
             <CardHeader>November</CardHeader>
             <CardBody>
-              <CardTitle>CoinPCB Refator</CardTitle>
+              <CardTitle>CoinPCB Refactor</CardTitle>
               <p>
                 Refactor the ESP8266 CoinPCB to work with Mozilla IOT and Azure
                 IOT. Refactor my roomba virtual wall code to work with Mozilla
