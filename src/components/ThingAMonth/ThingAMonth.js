@@ -50,7 +50,7 @@ const ThingAMonth = () => (
                 This will be plugin to help run a virtual meeting and minimize
                 people needing to be agressive to get their point across.
               </p>
-              <Button href="https://github.com/keener2u/fractalfx-ansible-k3s">Linode K3S Clusetr Up! &rarr;</Button>
+              <Button href="https://github.com/keener2u/fractalfx-ansible-k3s">Linode K3S Cluster Up! &rarr;</Button>
             </CardBody>
           </Card>
         </Col>
