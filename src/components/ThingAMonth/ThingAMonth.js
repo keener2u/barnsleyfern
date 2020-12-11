@@ -11,12 +11,11 @@ import {
 } from "shards-react";
 
 const ThingAMonth = () => (
-  <div data-testid="ThingAMonth" type="dark" theme="primary" expand="ld">
+  <div data-testid="ThingAMonth" expand="ld"  style={{ color: "black" }}>
     <Card theme="light">
       <CardBody>
         <CardTitle>Thing A Month</CardTitle>
         <p>
-          {" "}
           Starting in October I will begin posting a project a month. Below are
           some of the projects I have lined up.
         </p>
